@@ -8,73 +8,163 @@
   
   <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
+<main class="container">
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <section class="grid-item jeremy">
+     
+      <div class="jeremy-bottom">
+        <div class="jeremy-top">
+          <div class="avatar-cont"><img src="images/image-jeremy.png" alt="Jeremy Avatar"></div>
+          <div class="jeremy-cont">
+            <p>Report for</p>
+            <h2>Jeremy <div>Robson</div></h2>
+          </div>
+        </div>
+        <div class="days">
+          <p class="daily-btn">Daily</p>
+          <p class="weekly-btn">Weekly</p>
+          <p class="monthly-btn">Monthly</p>
+        </div>
+      </div>
+    </section>
+  
+    <section class="grid-item work">
+      <div data-position="0" class="content">
+        <div class="content-title">
+          <h1>Work</h1>
+          <img src="images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="daily none">
+          <div class="current daily-current"><p>5hrs</p> <!-- daily --></div>
+          <div class="previous daily-previous"><p>Yesterday - 7hrs</p></div> <!-- daily -->
+        </div>
+
+        <div class="weekly">
+          <div class="current weekly-current"><p>32hrs <!-- weekly --></p></div>
+          <div class="previous weekly-previous">
+            <p>Previous - 36hrs <!-- weekly --></p>
+          </div>
+        </div>
+        <div class="monthly">
+          <div class="current monthly-current">103hrs <!-- monthly --></div>
+          <div class="previous monthly-previous">Previous - 128hrs <!-- monthly --></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-item play">
+      <div data-position="1" class="content">
+        <div class="content-title">
+          <h1>Play</h1>
+          <img src="images/icon-ellipsis.svg" alt="">
+          
+        </div>
+        <div class="daily none">
+          <div class="current daily-current"><p>1hr <!-- daily --></p></div>
+          <div class="previous daily-previous">
+            <p>Yesterday - 2hrs <!-- daily --></p>
+          </div>
+        </div>
+        <div class="weekly">
+          <div class="current weekly-current"><p>10hrs <!-- weekly --></p></div>
+          <div class="previous weekly-previous"><p>Previous - 8hrs <!-- weekly --></p></div>
+        </div>
+        <div class="monthly">
+          <div class="current monthly-current"><p>23hrs <!-- monthly --></p></div>
+          <div class="previous monthly-previous"><p>Previous - 29hrs <!-- monthly --></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-item study">
+      <div data-position="2" class="content">
+        <div class="content-title">
+          <h1>Study</h1>
+          <img src="images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="daily none">
+          <div class="current daily-current"><p>0hrs <!-- daily --></p></div>
+          <div class="previous daily-previous"><p>Yesterday - 1hr <!-- daily --></p></div>
+        </div>
+        <div class="weekly">
+          <div class="current weekly-current"><p>4hrs <!-- weekly --></p></div>
+          <div class="previous weekly-previous"><p>Previous - 7hrs <!-- weekly --></p></div>
+        </div>
+        <div class="monthly">
+          <div class="current monthly-current"><p>13hrs <!-- monthly --></p></div>
+          <div class="previous monthly-previous"><p>Previous - 19hrs <!-- monthly --></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section  class="grid-item exercise">
+      <div data-position="3" class="content">
+        <div class="content-title">
+          <h1>Exercise</h1>
+          <img src="images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="daily none">
+          <div class="current daily-current"><p>1hr <!-- daily --></p></div>
+          <div class="previous daily-previous"><p>Yesterday - 1hr <!-- daily --></p></div>
+        </div>
+        <div class="weekly">
+          <div class="current weekly-current"><p>4hrs <!-- weekly --></p></div>
+          <div class="previous weekly-previous"><p>Previous - 5hrs <!-- weekly --></p></div>
+        </div>
+        <div class="monthly">
+          <div class="current monthly-current"><p>11hrs <!-- monthly --></p></div>
+          <div class="previous monthly-previous"><p>Previous - 18hrs <!-- monthly --></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-item social">
+      <div  data-position="4" class="content">
+        <div class="content-title">
+          <h1>Social</h1>
+          <img src="images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="daily none">
+          <div class="current daily-current"><p>1hr <!-- daily --></p></div>
+          <div class="previous daily-previous"><p>Yesterday - 3hrs <!-- daily --></p></div>
+        </div>
+        <div class="weekly">
+          <div class="current weekly-current"><p>5hrs <!-- weekly --></p></div>
+          <div class="previous weekly-previous"><p>Previous - 10hrs <!-- weekly --></p></div>
+        </div>
+        <div class="monthly">
+          <div class="current monthly-current"><p>21hrs <!-- monthly --></p></div>
+          <div class="previous monthly-previous"><p>Previous - 23hrs <!-- monthly --></p></div>
+        </div>
+      </div>
+    </section>
+  
+    <section  class="grid-item care">
+      <div data-position="5" class="content">
+        <div class="content-title">
+          <h1>Self Care</h1>
+          <img src="images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="daily none">
+          <div class="current daily-current"><p>0hrs <!-- daily --></p></div>
+          <div class="previous daily-previous"><p>Yesterday - 1hr <!-- daily --></p></div>
+        </div>
+        <div class="weekly">
+          <div class="current weekly-current"><p>2hrs <!-- weekly --></p></div>
+          <div class="previous weekly-previous"><p>Previous - 2hrs <!-- weekly --></p></div>
+        </div>
+        <div class="monthly">
+          <div class="current monthly-current"><p>7hrs <!-- monthly --></p></div>
+          <div class="previous monthly-previous"><p>Previous - 11hrs <!-- monthly --></p></div>
+        </div>
+      </div>
+    </section>
+</main>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
