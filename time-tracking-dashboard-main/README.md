@@ -1,5 +1,7 @@
-# Frontend Mentor - Time tracking dashboard solution
+# Time tracking dashboard 
  
+### Screenshot
+![](demo.gif)
 
 ## Table of contents
 
@@ -25,8 +27,6 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Switch between viewing Daily, Weekly, and Monthly stats
 
-### Screenshot
-![](demo.gif)
 
 ## My process
 
